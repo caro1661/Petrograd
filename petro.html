@@ -93,8 +93,9 @@
         <!--Retter-->
         <div class="container">
 
-            <section class="row hovedretbilleder">
+            <section class="row produktliste">
                 <!--Suppe-->
+                <!--Her skal produkter lægges ind-->
                 <template id="produkt_template">
                     <div class="col-sm-4 ">
                         <section class="row">
@@ -102,11 +103,23 @@
                         </section>
                         <section class="row">
                             <div class="col-sm-6 suppe">
-                                <h3 class="data_navn"><i>Bulgarskbondesuppe</i></h3>
+                                <h3 class="data_navn">DATA_NAVN</h3>
 
                                 <h4 class="pris">Pris:<span class="data_pris">DATA_PRIS</span>,-</h4>
+                                <!--TODO:
+                                 Sæt udsolgt class ved udsolgte produkter
+                                 Sæt rabat class ved rabat produkter
+                                 -->
+                                <h4 class="rabatpris">Pris:
+                                     <span class="data:rabatpris">DATA_RABATPRIS</span>,-</h4>
+                                <!--Skal kun vises ved rabat-->
 
-                                <!--TODO: sæt udsolgt class ved udsolgte produkter -->
+
+
+                                <h4 class="udsolgttekst">Denne vare er udsolgt</h4>
+                                <!--Skal kun vises ved udsolgte produkter-->
+
+
                             </div>
                             <div class="col-sm-6">
 
@@ -118,64 +131,13 @@
                                 <!-- Modal -->
 
                             </div>
-
+                        </section>
                     </div>
                 </template>
+
                 <!--Suppe slut-->
-                <!--Rogn-->
-                <div class="col-sm-4 ">
-                    <section class="row">
-                        <img src="imgs/medium/mos-rogn-md.jpg" alt="billede_2"></section>
-                    <section class="row">
-                        <div class="col-sm-6 rogn">
-                            <h3><i>Rogn med mos</i></h3>
 
-                            <h4 class="udsolgt">49,-</h4>
-                            <h4 class="udsolgttekst">Denne vare er udsolgt</h4>
-
-                        </div>
-                        <div class="col-sm-6">
-
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
-                                Se flere detaljer
-                            </button>
-
-                            <!-- Modal -->
-
-                            <!--Skal kun vises ved udsolgt-->
-
-                        </div>
-
-                    </section>
-
-                </div>
-                <!--Rogn slut-->
-                <!--Salat-->
-                <div class="col-sm-4 ">
-                    <section class="row"> <img src="imgs/medium/russisksalat-md.jpg" alt="billede_3"></section>
-                    <section class="row">
-                        <div class="col-sm-6 salat">
-                            <p><i>Russisk salat</i></p>
-
-                            <h4 class="rabat"><span>DATA_PRIS</span>39,-</h3>
-                        <h4 class="rabatpris"><span class="data_rabatpris">DATA_RABATPRIS</span>31,-</h3>
-            <!--Sæt ved rabat -->
-                        </div>
-                        <div class="col-sm-6">
-
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
-                                Se flere detaljer
-                            </button>
-
-                            <!-- Modal -->
-                        </div>
-                    </section>
-
-                </div>
-                <!--Salat slut-->
-                </section>
+            </section>
 
 
         </div>

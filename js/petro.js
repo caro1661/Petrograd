@@ -1,8 +1,15 @@
-$.getJSON("http://petlatkea.dk/2017/dui/api/productlist", jegHarFåetData)
+window.addEventListener("load", sidenVises);
 
-function jegHarFåetData(retter) {
-    console.log(retter)
+function sidenVises() {
+    console.log("siden vises");
+    visProdukt();
+}
 
+function visProdukt() {
+    //klon produkt_template
+    var klon = document.querySelector("#produkt_template").content.cloneNode(true);
+    //indsæt data i klon
 
-
+    //append klon til .produktliste
+    document.querySelector(".produktliste").appendChild(klon);
 }
